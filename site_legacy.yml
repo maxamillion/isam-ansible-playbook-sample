@@ -1,0 +1,10 @@
+---
+# Build out entire environment
+
+- name: Apply Common Configuration to all Appliances
+  hosts: all
+  connection: local
+  gather_facts: no
+  roles:
+    - role: config_ntp
+      tags: ["ntp"]

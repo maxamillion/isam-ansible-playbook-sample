@@ -1,16 +1,8 @@
 [boulder-primary]
-192.168.198.144
+ec2-107-20-30-225.compute-1.amazonaws.com
 
-[boulder-restricted]
-192.168.198.145
-192.168.198.153
-
-[boulder:children]
-boulder-primary
-boulder-restricted
-
-[primary:children]
-boulder-primary
-
-[restricted:children]
-boulder-restricted
+[boulder-primary:vars]
+ansible_connection="ibm.isam.isam"
+ansible_username="admin@local"
+ansible_password="i-05cf59748c6ae694d"
+remote_port="443"

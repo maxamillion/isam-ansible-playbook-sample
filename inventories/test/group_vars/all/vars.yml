@@ -1,9 +1,9 @@
 # Set the Python interpreter path to use
-ansible_python_interpreter: /home/python/python2.7.13/bin/python
+ansible_python_interpreter: /home/admiller/.virtualenvs/isam/bin/python
 
 # Use local connection for making all calls
-connection: local
-ansible_connection: local
+connection: ibm.isam.isam
+ansible_connection: ibm.isam.isam
 
 # Default LMI port for appliances
 lmi_port: 443
